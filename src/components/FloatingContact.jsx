@@ -28,7 +28,10 @@ export default function FloatingContact() {
       {open && (
         <div className="panel" role="dialog" aria-label="Contact card">
           <img src="/avatar.png" alt="" width="84" height="84" />
-          <p className="me-name">{profile.displayName}</p>
+          <div className="card-heading">
+            <p className="card-greeting">Hi, I'm</p>
+            <p className="me-name">{profile.displayName}</p>
+          </div>
           <p className="tag">Let's talk!</p>
           <ul className="rows">
             <li><a href={'mailto:' + profile.email}><span className="ic"><FaEnvelope /></span><span>Email</span></a></li>

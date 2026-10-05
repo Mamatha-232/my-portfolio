@@ -1,6 +1,3 @@
-// ALL your content lives here. Edit this file, the whole site updates.
-// Every "#" below is a placeholder link: replace it with the real URL.
-
 export const profile = {
   name: 'Mamatha',
   fullName: 'Panday Mamatha',
@@ -8,7 +5,7 @@ export const profile = {
   college: 'Kakatiya Institute of Technology and Science (KITSW), Warangal',
   cgpa: '9.53',
   email: 'mamathapanday232@gmail.com',
-  formKey: 'YOUR_WEB3FORMS_KEY', // TODO: paste the free access key from web3forms.com (it is meant to be public)
+  formKey: '535e9ea4-af45-49bc-9f43-ed9e2a1fc81f', 
   github: 'https://github.com/Mamatha-232',
   linkedin: 'https://www.linkedin.com/in/mamathapanday23/',
   kaggle: 'https://www.kaggle.com/mamathapanday',
@@ -20,7 +17,7 @@ export const profile = {
 // Small text beside the rotating box, and the words that rotate inside it.
 // To use "I can do" instead, change the label and make the words activities (e.g. 'web development').
 export const roleLabel = "and I'm a"
-export const roles = ['web developer', 'AI/ML enthusiast', 'problem solver']
+export const roles = ['Web Developer', 'AI/ML Enthusiast', 'Problem Solver']
 
 export const skills = {
   Languages: ['Java', 'Python'],
@@ -43,13 +40,19 @@ export const projects = [
     title: 'Multi-role Learning Management System',
     short: 'React frontend with separate views for students, teachers and admins.',
     tech: ['React', 'Spring Boot', 'MySQL'],
-    repo: '#', // TODO: GitHub repo link
+    repo: 'https://github.com/Mamatha-232/lms-project', 
   },
   {
     title: 'Institute Document Retrieval System',
     short: 'Portal to request and track official institute documents.',
     tech: ['JavaScript', 'Express.js', 'MongoDB'],
     repo: '#', // TODO: GitHub repo link
+  },
+  {
+    title: 'FoundIt',
+    short: 'A campus lost-and-found app for finding lost items.',
+    tech: ['Python', 'Flask', 'SQLite'],
+    repo: 'https://github.com/Mamatha-232/FoundIt',
   },
 ]
 
@@ -69,12 +72,14 @@ export const experience = [
 ]
 
 export const certificates = [
-  { title: 'ServiceNow Virtual Internship Program', issuer: 'ServiceNow University and SmartBridge (AICTE approved)', when: 'Oct 2025', link: '#' },
-  { title: 'Tata Forage GenAI Virtual Experience', issuer: 'Forage', when: 'Jun 2026', link: '#' },
-  { title: 'Kaggle: Python', issuer: 'Kaggle', when: '', link: '#' },
-  { title: 'Kaggle: Pandas', issuer: 'Kaggle', when: '', link: '#' },
-  { title: 'Kaggle: Data Visualization', issuer: 'Kaggle', when: '', link: '#' },
-  { title: 'Kaggle: Intro to ML', issuer: 'Kaggle', when: '', link: '#' },
+  { title: 'ServiceNow Virtual Internship Program', issuer: 'ServiceNow University and SmartBridge (AICTE approved)', when: 'Oct 2025', link: '/Certificate%20-%20ServiceNow.pdf' },
+  { title: 'ServiceNow Micro-Certification: Welcome to ServiceNow', issuer: 'ServiceNow', when: 'June 2025', link: '/Micro-Certification%20-%20Welcome%20to%20ServiceNow.pdf' },
+  { title: 'Institute Document Retrieval System (IDRS)', issuer: 'KITS Warangal', when: 'Jun 2025', link: '/Idrs_certificate_Mamatha.jpeg' },
+  { title: 'Tata Forage GenAI Virtual Experience', issuer: 'Forage', when: 'Jun 2026', link: '/forage_genAI_completion_certificate.pdf' },
+  { title: 'Kaggle: Python', issuer: 'Kaggle', when: 'June 2026', link: '/Mamatha%20Panday%20-%20Python.png' },
+  { title: 'Kaggle: Pandas', issuer: 'Kaggle', when: 'July 2026', link: '/Mamatha%20Panday%20-%20Pandas.png' },
+  { title: 'Kaggle: Data Visualization', issuer: 'Kaggle', when: 'July 2026', link: '/Mamatha%20Panday%20-%20Data%20Visualization.png' },
+  { title: 'Kaggle: Intro to ML', issuer: 'Kaggle', when: 'July 2026', link: '/Mamatha%20Panday%20-%20Intro%20to%20Machine%20Learning.png' },
 ]
 
 export const achievements = [

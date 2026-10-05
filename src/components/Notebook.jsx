@@ -4,7 +4,7 @@ import { profile, projects, experience, certificates } from '../data'
 // Short teasers built from data.js, so they always match the full sections below
 const cells = [
   { code: 'about', out: () => <p>{profile.tagline}</p> },
-  { code: 'skills', out: () => <div className="chips">{['Java', 'React.js', 'Spring Boot', 'MongoDB', 'ML fundamentals'].map((s) => <span key={s}>{s}</span>)}</div> },
+  { code: 'skills', out: () => <div className="chips">{['Java', 'Python', 'React.js', 'HTML/CSS', 'MySQL'].map((s) => <span key={s}>{s}</span>)}</div> },
   { code: 'projects', out: () => <div className="mono">{'[' + projects.map((p) => "'" + p.title + "'").join(',\n ') + ']'}</div> },
   { code: 'experience', out: () => <div className="mono">{'[' + experience.map((e) => "'" + e.role + ", " + e.org + "'").join(',\n ') + ']'}</div> },
   { code: 'certificates', out: () => <div className="mono">{certificates.length + ' certificates'}</div> },
@@ -12,9 +12,9 @@ const cells = [
 ]
 
 export default function Notebook() {
-  // num: null = not run, '*' = running, number = In [n]
-  const [state, setState] = useState(cells.map((_, i) => ({ num: i < 2 ? i + 1 : null, shown: i < 2 })))
-  const counter = useRef(2)   // First two cells are already visible on page load
+  // The About cell is visible on load; other cells appear when run.
+  const [state, setState] = useState(cells.map((_, i) => ({ num: i === 0 ? 1 : null, shown: i === 0 })))
+  const counter = useRef(1)
 
   const run = (i) => {
     counter.current += 1
